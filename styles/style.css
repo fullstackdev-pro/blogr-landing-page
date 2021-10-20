@@ -1,0 +1,534 @@
+body {
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 1rem;
+}
+
+.header {
+    background: hsl(356, 100%, 66%);
+    background-image: url('/images/bg-pattern-intro.svg');
+    border-radius: 0 0 0 70px;
+}
+
+.nav__header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__logo {
+    padding: 2rem 1rem 3rem 1rem;
+}
+
+.nav__logo > img {
+    width: 80%;
+    height: 80%;
+}
+
+.nav__icon-hamburger {
+    padding: 2.3rem 1rem 3rem 9rem;
+    cursor: pointer;
+}
+
+.nav__icon-close {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.nav__menu {
+    position: absolute;
+    width: 83%;
+    z-index: 10;
+    display: none;
+    margin: 0 1rem;
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.nav__title1 {
+    padding-top: 1rem;
+}
+
+.hr {
+    position: absolute;
+    left: 1rem;   
+    border-bottom: 1px solid hsl(240, 2%, 79%);
+    width: 90%;
+}
+
+.nav__title-arrow-light {
+    display: none;
+}
+
+.nav__login > button {
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.nav__sign-up > button {
+    margin-bottom: 1rem;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(356, 100%, 66%);
+    cursor: pointer;
+}
+
+.nav__title1, .nav__title2,
+.nav__title3 {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.nav__subtitle1, .nav__subtitle2,
+.nav__subtitle3 {
+    display: none;
+    background-color: hsl(240, 2%, 79%);
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.nav__subtitle1 > a{
+    padding-top: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.nav__subtitle2 > a{
+    padding-top: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.nav__subtitle3 > a{
+    padding-top: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.header__title {
+    padding: 0 1rem;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.header__subtitle {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+}
+
+.header__buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    padding-bottom: 7rem;
+}
+
+.header__button1 {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+    width: 7rem;
+    height: 2rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 25px;
+    font-weight: 900;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.header__button2 {
+    background-color: hsl(356, 100%, 66%);
+    color: hsl(0, 0%, 100%);
+    width: 7rem;
+    height: 2rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 25px;
+    font-weight: 900;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.design__section {
+    margin-top: 3rem;
+}
+
+.design__section-title,
+.design__section-blog_title
+ {
+    color: hsl(208, 49%, 24%);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.design__section-image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.design__section-blog_subtitle {
+    text-align: center;
+    color: hsl(207, 13%, 34%);
+    padding: 0 2.1rem;
+}
+
+.art__section-image > img {
+    margin-top: -13rem;
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    /* top: 74rem; */
+    left: 0;
+    z-index: 10;
+}
+
+.art__section-starter {
+    background-color: hsl(237, 17%, 21%);
+    border-radius: 0 70px 0 80px;
+}
+
+.art__section-title {
+    padding-top: 10rem;
+    margin-top: 14rem;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.art__section-subtitle {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 0 2rem;
+    padding-bottom: 6rem;
+}
+
+.art__section-image2 {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.art__section-title1 {
+    text-align: center;
+    color: hsl(237, 17%, 21%);
+}
+
+.art__section-subtitle1 {
+    padding: 0 2.3rem;
+    text-align: center;
+    color: hsl(207, 13%, 34%);
+}
+
+.footer {
+    margin-top: 5rem;
+    background-color: hsl(237, 17%, 21%);
+    border-radius: 0 100px 0 0;
+}
+
+.footer__logo {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.footer__logo > img {
+    width: 30%;
+    height: 30%;
+}
+
+.footer1, 
+.footer2,
+.footer3 {
+    padding: 0;
+}
+
+.footer__title {
+    text-align: center;
+    margin: 2rem 0 0 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.footer__subtitle {
+    padding-top: 0.7rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__subtitle > a {
+    color: hsl(240, 2%, 79%);
+    text-decoration: none;
+}
+
+.footer__subtitle > a:hover {
+    text-decoration:underline;
+}
+
+.footer4 {
+    padding-bottom: 5rem;
+}
+
+.attribution {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.attribution > div {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1440px) {
+    .header__title {
+        font-weight: 700;
+    }
+    
+    .nav__icon-hamburger {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        
+    }
+
+    .nav__logo {
+        width: 100%;
+        padding-left: 5rem;
+    }
+
+    .nav__menu {
+        position: absolute;
+        display: flex;
+        background-color: hsl(356, 100%, 66%);  
+        top: 2rem;
+        left: 12rem;
+    }
+
+    .nav__title1,
+    .nav__title2,
+    .nav__title3 {
+        padding: 0.35rem 0 0 1rem;
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+    }
+
+    .nav__title1:hover {
+        text-decoration: underline;
+    }
+
+    .nav__title2:hover {
+        text-decoration: underline;
+    }
+    
+    .nav__title3:hover {
+        text-decoration: underline;
+    }
+
+    .hr {
+        display: none;
+    }
+
+    .nav__buttons {
+        position: absolute;
+        display: flex;
+        /* width: 10%; */
+        left: 60rem;
+        top: -0.6rem;
+    }
+
+    .nav__login > button {
+        background-color: hsl(356, 100%, 66%);
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+    }
+
+    .nav__sign-up > button {
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(356, 100%, 66%);
+        font-weight: 700;
+        width: 100%;
+        margin-top: 0.5rem;
+        padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+
+    .nav__title-arrow-dark {
+        display: none;
+    }
+    
+    .nav__title-arrow-light {
+        display: inline-block;
+    }
+
+    .nav__subtitle1, .nav__subtitle2,
+    .nav__subtitle3 {
+        display: none;
+        background-color: hsl(0, 0%, 100%);
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .nav__sign-up > button:hover {
+        background-color: hsl(356, 100%, 66%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .header__subtitle {
+        margin-top: 1.5rem;
+    }
+
+    .header__buttons {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__buttons > div {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .header__button1:hover {
+        background-color: hsl(356, 100%, 66%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .header__button2:hover {
+        color: hsl(356, 100%, 66%);
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    .blog {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .design__section {
+        margin-top: 5rem;
+    }
+
+    .design__section-title {
+        font-size: 1.8rem;
+    }
+
+    .design__section-image {
+        width: 170%;
+    }
+
+    .blog__menu {
+        margin-top: 3rem;
+    }
+
+    .design__section-blog_title {
+        text-align: left;
+        padding: 2rem 0 0 2rem;
+    }
+
+    .design__section-blog_subtitle {
+        text-align: left;
+        padding-right: 15rem;
+    }
+
+    .art__title {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .art__section-image > img {
+        margin-top: -2.5rem;
+        width: 40%;
+        height: 50%;
+        position:absolute;
+        /* top: 74rem; */
+        z-index: 10;
+        padding-left: 7rem;
+    }
+
+    .art__section {
+        margin-top: 5rem;
+    }
+
+    .art__section-title {
+        margin-top: 1rem;
+        padding-top: 5rem;
+    }
+
+    .art__title {
+        background-color: hsl(237, 17%, 21%);
+        border-radius: 0 70px 0 80px;
+        height: 10%;
+    }
+
+    .art__section-starter {
+        display: block;
+        width: 50%;
+        padding: 0rem;
+    }
+
+    .art__section-title {
+        text-align: left;
+    }
+
+    .art__section-subtitle {
+        text-align: left;
+        padding:0 15rem 7rem 0;
+
+    }
+
+    .blogs {
+        margin-top: 10rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .art__section-blogs__image {
+        width: 250%;
+        margin-top: -5rem;
+    }
+
+    .art__section-blogs {
+        padding-top: 5rem;
+    }
+
+    .art__section-title1 {
+        text-align: left;
+    }
+
+    .art__section-subtitle1 {
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.5rem 0;
+    }
+
+    .footer__logo {
+        width: 30%;
+        padding-right: 0;
+    }
+
+    .footer1, 
+    .footer2,
+    .footer3 {
+        padding: 2rem 0;
+    }
+
+    .footer__subtitle > a {
+        padding-top: 0.5rem;
+    }
+
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 1rem; text-align: center; color: rgb(0, 0, 0);}
+    .attribution a { color: hsl(0, 0%, 0%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__header">
+          <div class="nav__logo">
+            <img src="./images/logo.svg" alt="Logo">
+          </div>
+          <div class="nav__icon-hamburger" id="nav__icon-hamburger" onclick="change(1)">
+            <img src="./images/icon-hamburger.svg" alt="icon-hamburger">
+          </div>
+          <div class="nav__icon-close" id="nav__icon-close" onclick="change(2)">
+            <img src="./images/icon-close.svg" alt="icon-close">
+          </div>
+        </div>
+        <div id="nav__menu" class="nav__menu">
+          <div class="nav__menu-product">
+            <div class="nav__title1" id="nav__title1" onclick="change(3)">
+              Product
+              <img src="./images/icon-arrow-dark.svg" alt="" class="nav__title-arrow-dark">
+              <img src="./images/icon-arrow-light.svg" alt="" class="nav__title-arrow-light">
+            </div>
+        
+            <div class="nav__subtitle1" id="nav__subtitle1">
+              <a href="">Overview</a>
+              <a href="">Pricing</a>
+              <a href="">Marketplace</a>
+              <a href="">Features</a>
+              <a href="">Integrations</a>
+            </div>
+          </div>
+      
+          <div class="nav__menu-company">
+            <div class="nav__title2" id="nav__title2" onclick="change(4)">
+              Company
+              <img src="./images/icon-arrow-dark.svg" alt="icon-dark" class="nav__title-arrow-dark">
+              <img src="./images/icon-arrow-light.svg" alt="icon-dark" class="nav__title-arrow-light">
+            </div>
+            
+            <div class="nav__subtitle2" id="nav__subtitle2">
+              <a href="">About</a>
+              <a href="">Team</a>
+              <a href="">Blog</a>
+              <a href="">Careers</a>
+            </div>
+          </div>
+      
+          <div class="nav__menu-connect">
+            <div class="nav__title3" id="nav__title3" onclick="change(5)">
+              Connect
+              <img src="./images/icon-arrow-dark.svg" alt="icon-dark" class="nav__title-arrow-dark">
+              <img src="./images/icon-arrow-light.svg" alt="icon-dark" class="nav__title-arrow-light">
+            </div>
+        
+            <div class="nav__subtitle3" id="nav__subtitle3">
+              <a href="">Contact</a>
+              <a href="">Newsletter</a>
+              <a href="">Newsletter</a>
+            </div>
+          </div>
+          <div class="hr">
+          </div>
+          <div class="nav__buttons">
+            <div class="nav__login">
+              <button>
+                Login
+              </button>
+            </div>
+            <div class="nav__sign-up">
+              <button>
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div> 
+      </nav>
+
+      <div class="header__title">
+        A modern publishing platform
+      </div>
+      <div class="header__subtitle">
+        Grow your audience and build your online brand
+      </div>
+    
+      <div class="header__buttons">
+        <div>
+          <button class="header__button1">
+            Start for Free
+          </button>
+        </div>
+        <div>
+          <button class="header__button2">
+            Learn More
+          </button>
+        </div>
+      </div> 
+
+    </header>
+
+    <section class="design__section">
+      <div class="design__section-title">
+        <h1>
+          Designed for the future
+        </h1>
+      </div>
+
+      <div class="blog">
+        <div class="design__section-image">
+          <img src="./images/illustration-editor-mobile.svg" alt="design__section-image">
+        </div>
+  
+        <div class="blog__menu">
+          <div class="design__section-blog_title">
+            <h1>
+              Introducing an extensible editor
+            </h1>
+          </div>
+          <div class="design__section-blog_subtitle">
+            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+            change the looks of a blog.
+          </div>
+        
+          <div class="design__section-blog_title">
+           <h1>
+            Robust content management
+           </h1>
+          </div>
+          <div class="design__section-blog_subtitle">
+            Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="art__section">
+      <div class="art__title">
+        <div class="art__section-image">
+          <img src="./images/illustration-phones.svg" alt="Illustration phones">
+        </div>
+        <div class="art__section-starter">
+          <div class="art__section-title">
+            <h1>
+              State of the Art Infrastructure
+            </h1>
+          </div>
+          
+          <div class="art__section-subtitle">
+            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </div>
+        </div>
+      </div>
+      <div class="blogs">
+        <div class="art__section-blogs__image">
+          <img class="art__section-image2" src="./images/illustration-laptop-mobile.svg" alt="Illustration image mobile">
+        </div>
+        <div class="art__section-blogs">
+          <div class="art__section-blog2">
+            <div class="art__section-title1">
+              <h1>
+                Free, open, simple
+              </h1>
+            </div>  
+            <div class="art__section-subtitle1">
+              Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+              features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+              and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+            </div>
+          </div>
+          <div class="art__section-blog3">
+            <div class="art__section-title1">
+              <h1>
+                Powerful tooling
+              </h1>
+            </div> 
+            <div class="art__section-subtitle1">
+              Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+              capable of producing even the most complicated sites.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="./images/logo.svg" alt="Logo">
+      </div>
+
+      <div class="footer1">
+        <div class="footer__title">
+          Product
+        </div>
+    
+        <div class="footer__subtitle">
+          <a href="#">Overview</a>
+          <a href="#">Pricing</a>
+          <a href="#">Marketplace</a>
+          <a href="#">Features</a>
+          <a href="#">Integrations</a>
+        </div>
+      </div>  
+    
+      <div class="footer2">
+        <div class="footer__title">
+          Company
+        </div>
+  
+        <div class="footer__subtitle">
+          <a href="#">About</a>
+          <a href="#">Team</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div> 
+      </div>
+
+      <div class="footer3"> 
+        <div class="footer__title">
+          Connect
+        </div>
+  
+        <div class="footer__subtitle">
+          <a href="#">Contact</a>
+          <a href="#">Newsletter</a>
+          <a href="#">LinkedIn</a>
+        </div> 
+      </div>
+      <div class="footer4"></div>
+    </footer>
+  </div>
+
+  <script>
+    function change(input) {
+      if(input === 1) {
+        let elem = document.getElementById("nav__menu");
+        elem.style.display = "block";
+        let icon = document.getElementById("nav__icon-hamburger");
+        icon.style.display = "none"
+        let close = document.getElementById("nav__icon-close");
+        close.style.display = "block";
+      }
+      if(input === 2) {
+        let elem = document.getElementById("nav__menu");
+        elem.style.display = "none";
+        let icon = document.getElementById("nav__icon-hamburger");
+        icon.style.display = "block"
+        let close = document.getElementById("nav__icon-close");
+        close.style.display = "none";
+      }
+      for (let i = 3; i < 6; i++) {
+        if(i === input) {
+          if(document.getElementById(`nav__subtitle${i-2}`).style.display === "none" || document.getElementById(`nav__subtitle${i-2}`).style.display === "") {
+            document.getElementById(`nav__subtitle${i-2}`).style.display = "flex";
+          }
+          else {
+            document.getElementById(`nav__subtitle${i-2}`).style.display = "none";
+          }
+        }
+        else {
+          document.getElementById(`nav__subtitle${i-2}`).style.display = "none";
+        }
+      } 
+    }
+  </script>
+
+  <div class="attribution">
+    <div class="mentor">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 
+    </div>
+    <div class="developer">
+      Coded by <a href="https://github.com/fullstackdev-pro">Ismoil</a>
+    </div>
+  </div>
+</body>
+</html>
